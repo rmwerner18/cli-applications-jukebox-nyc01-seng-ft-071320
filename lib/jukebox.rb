@@ -56,14 +56,11 @@ def run
   command_1 = gets.strip
   if command_1 == "help"
     help
-  end
-  if command_1 == "list"
+  elsif command_1 == "list"
     list(songs)
-  end
-  if command_1 == "play"
+  elsif command_1 == "play"
     play(songs)
-  end
-  if command_1 == "exit"
+  elsif command_1 == "exit"
     exit_jukebox
   end
   run
